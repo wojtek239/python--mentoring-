@@ -1,0 +1,10 @@
+1.integer
+2.integer
+3.integer
+4.float
+5.float
+6.string
+7.string
+8.string
+9.bool
+10bool

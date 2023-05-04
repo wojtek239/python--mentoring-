@@ -1,0 +1,5 @@
+GitFlow - 5 rodzajów branchy w repo. Polega na odpowiednim uporządkowaniu gałęzi w swoim repo.
+Jest nieco bardziej złożonym podejściem do pracy wymagającym większego usystematyzowania.
+
+
+GitLab Flow - 2 rodzaje branchy w repo

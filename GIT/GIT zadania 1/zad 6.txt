@@ -1,0 +1,4 @@
+system CI to system który automatycznie bada, testuje i wdraża oprogramowanie.
+Działa tak że każda zmiana w kodzie źródłowym projektu dodana do systemu kontrolii wersji (git)
+powoduje automatycze wywołanie serii testów i procedur budowania oprogramowania.
+Ułatwia i przyśpiesza prace.

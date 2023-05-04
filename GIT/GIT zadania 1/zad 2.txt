@@ -1,0 +1,4 @@
+na GitHubie
+env
+venv
+log

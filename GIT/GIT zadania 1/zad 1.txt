@@ -1,0 +1,8 @@
+GitHub - serwis do hostowania repozytoriów GIT.
+
+Sourceforge - przed GitHubem, serwis był pełny reklam, a user-expierence pozostawiał wiele do życzenia.
+
+GitLab - serwis umozliwia przechowywanie i zarządzanie repozytoriami GIT.
+GitLab jest open-source(można go hostować na własnym serwie)
+
+GitKraken - narzędzie desktopowe do pracy z repozytoriami GIT. Ma intuicyjny interfejs użytkownika i wiele funkcji
