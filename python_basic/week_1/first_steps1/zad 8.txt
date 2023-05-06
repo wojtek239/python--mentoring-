@@ -1,0 +1,17 @@
+5 / 2 = 2.5 float
+1 + 1 = 2 int
+1.0 + 1 = 2.0 float
+2.0 + 2.0 = 4.0 float
+“napis” + 1 =  error
+“napis” + “napis” = "napisnapis" str
+True + True = 2 int
+5 % 2 = 1 int
+10 % 2 = 0 int
+20 % 30 = 20 int
+100 % 3 = 1 int
+100 // 3 = 33 int
+5 // 3 = 1 int
+1 // 3 = 0 int
+3**3 = 27 int
+2**2 = 4 int
+2**0 = 0 int

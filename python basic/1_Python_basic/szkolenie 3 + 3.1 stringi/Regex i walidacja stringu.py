@@ -1,1 +1,0 @@
-#regex sprawdza czy podany string pasuje do wybranego wzoru np przy hasłach do konta

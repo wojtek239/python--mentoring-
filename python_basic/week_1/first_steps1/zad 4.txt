@@ -1,0 +1,4 @@
+nieprawidłowo nazwane zmienne to:
+czy LubiPsy - bo spacja
+WartoscLiczbowa - to samo
+płeć??? - polski znak?
