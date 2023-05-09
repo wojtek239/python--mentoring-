@@ -6,7 +6,7 @@ cats_with_comas = ", ".join(divided_cats)
 print(cats_with_comas)
 print(cats)
 
-
+#trying to sort it but idk how, why .split doesn't work ?
 
 
 
