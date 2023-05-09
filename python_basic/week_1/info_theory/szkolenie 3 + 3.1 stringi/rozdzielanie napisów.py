@@ -1,6 +1,6 @@
-names = "Kacper;Jan;Elżbieta;Wojtek"
+names = "Kacper Jan Elżbieta Wojtek"
 # to mi jakos pod górke idzie
-separated = names.split(';')
+separated = names.split(' ')
 print(separated)
 
 surnames = "Kowalski Janda Okoń"
