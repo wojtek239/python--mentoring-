@@ -6,4 +6,5 @@ print(sentence)
 print(sentence.split(' '))
 print(sentence.replace(" ", "\n"))
 
-# trying to sort it but idk how, why .split doesn't work ?
+if sentence.islower(str)
+
