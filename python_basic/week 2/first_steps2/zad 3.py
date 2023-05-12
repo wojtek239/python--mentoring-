@@ -1,4 +1,4 @@
-a = ("DOM")
+a = "DOM"
 b = a.lower()
-c = b.replace("dom", "domek")
-print(c)
+c = a.replace("DOM", "domek")
+print(a, b, c)
