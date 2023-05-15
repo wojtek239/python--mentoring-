@@ -1,0 +1,5 @@
+number1 = float(input("please enter first number: "))
+number2 = float(input("please enter second number: "))
+number3 = float(input("please enter third number: "))
+biggest_number = max(number1, number2, number3)
+print(f"biggest number is: {biggest_number}")

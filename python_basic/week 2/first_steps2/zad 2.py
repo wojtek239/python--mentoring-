@@ -1,10 +1,15 @@
-amount_of_cats = int(input("Ile kotów ma Ala? ")) + 3
+amount_of_cats = int(input("How many cats does Ala have? ")) + 3
 
-sentence = f"Ala znalazła dziś jeszcze 3 koty obok domu. Teraz ma {amount_of_cats} kotów."
+sentence = f"Ala found 3 more cats todday. She now has {amount_of_cats} cats."
 print(sentence)
 
 print(sentence.split(' '))
 print(sentence.replace(" ", "\n"))
 
-if sentence.islower(str)
+if sentence.islower():
+    print("every letter is small :) ")
+else:
+    print("not every letter is small :( ")
 
+smol_sentence = sentence.lower()
+print(smol_sentence)
