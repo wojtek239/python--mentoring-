@@ -6,6 +6,8 @@ while numerator < ammount:
     print("poznaj pętle")
     numerator += 1
 # gdyby tego nie było to by proces ciągle sie powtarzał bez konca
+
+
 # pętla for
 ammount2 = int(input("podaj ile razy chcesz wyświetlić napis: "))
 for numerator in range(ammount2):
