@@ -17,6 +17,6 @@ else:
 
 # co się dzieje ze zmiennymi po nowym warunku ? nie wiem czy dawac ciągle shorter 1 i 2 czy rozwijac do 3 i 4
 if shorter1 ** 2 + shorter2 ** 2 == longest ** 2:
-    print("this is right triangle. ")
+    print("this is the right triangle. ")
 else:
     print("this is not the right triangle. ")
