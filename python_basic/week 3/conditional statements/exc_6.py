@@ -9,4 +9,4 @@ if "0":
     print("heads")
 if "1":
     print("tails")
- # while loop
+ # while loop uzyc
