@@ -1,6 +1,6 @@
 # for loop
 print("display digits: ")
-for i in range (100, 49, -1):
+for i in range(100, 49, -1):
     print(int(i))
 
 # while loop
