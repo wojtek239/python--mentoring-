@@ -1,16 +1,27 @@
 import random
-players_choice = input("please enter your guess: heads'0' or tails'1': ")
-while players_choice != "0" and players_choice != "1":
-    print("only chose heads or tails")
+players_score = 0
+computer_score = 0
+
+players_choice = input("please enter '0' for eagle and '1' for tails: ")
+
+while players_choice == "0":
+    print("you choose eagle.")
     break
-throw = random.randint(0, 1)
-print(f" 3...2...1...\n {throw}")
-if "0":
-    print("heads")
-if "1":
-    print("tails")
-if players_choice == throw:
-    print("player scores a point")
-if players_choice != throw:
-    print("computer scores a point")
+while players_choice == "1":
+    print("you choose tails.")
+    break
+#while players_choice != "0" or players_score != "1":
+#    print("only choose 0 or 1.")
+#    break
+computer_choice = random.randint(0, 1)
+print("3...2...1... throw ! ")
+while computer_choice == 0:
+    print("computer choose eagle.")
+    break
+while computer_choice == 1:
+    print("computer choose tails.")
+    break
+while players_choice == "0" and computer_choice == "0":
+        print("draw")
+        break
 
