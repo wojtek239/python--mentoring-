@@ -13,9 +13,14 @@ for i in range(line):
 print()
 print('\n')
 
-#right triangle
+# right triangle
 
-#triangle
 for i in range(1, 5):
-    print(('*' * i).center(4))
+    print(('*' * i).center(1))
+print('\n')
+
+# Christmas tree
+
+for i in range(1, 6):
+    print(('*' * i).center(2))
 
