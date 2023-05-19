@@ -9,5 +9,5 @@ for i in range(0, y):
 y = int(input("please enter y for while loop: "))
 numerator = 0
 while numerator < y:
-    print(i)
+    print(numerator + 1)
     numerator += 1

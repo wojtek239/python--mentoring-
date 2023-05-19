@@ -7,7 +7,6 @@ for numerator in range(n):
     else:
         print("podałeś zła liczbe. Zeruje i wychodze...")
         sum = 0
-# po co to skoro i tak jest break?
         break
 print("suma podanych liczb to: ", sum)
 print("kunic")
