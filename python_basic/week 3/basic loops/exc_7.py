@@ -7,9 +7,7 @@ for i in range(side):
 print('\n')
 
 # line
-line = int(10)
-for i in range(line):
-    print('*', end=' ')
+print('* ' * 10)
 print()
 print('\n')
 
@@ -24,3 +22,17 @@ print('\n')
 for i in range(1, 6):
     print(('*' * i).center(2))
 
+print("*".center(9,"-"))
+print("***".center(9,"-"))
+print("*****".center(9,"-"))
+print("*******".center(9,"-"))
+print("*********")
+
+stars = "*"
+print(stars.center(10))
+
+for i in range(4):
+    for j in range(2):
+        stars += "*"
+
+    print(stars.center(10))

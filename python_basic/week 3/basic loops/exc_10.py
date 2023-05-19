@@ -1,7 +1,13 @@
 user_number = int(input("please enter number: "))
-dividors_sum = 0
-def perfect_number(num):
-    for i in range(1, num):
-        if num % 1 == 0:
-            dividors_sum += i
-# everytime there is no change while dividing, dividors_sum grows by 1
+dividers = []
+
+for div in range(1, user_number):
+    if not user_number % div:
+        dividers.append(div)
+
+if sum(dividers) == user_number:
+    print("This number is perfect!")
+else:
+    print("This number is ugly !")
+
+# everytime there is no change while dividing, dividers_sum grows by 1

@@ -1,0 +1,1 @@
+# zrobić jak w zda 6 z while

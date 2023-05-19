@@ -1,4 +1,10 @@
-digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-digits_sum = sum(digits)
-average = digits_sum / len(digits)
+from statistics import mean
+
+numbers = []
+for i in range(10):
+    numbers.append(i)
+
+average = sum(numbers) / len(numbers)
 print(average)
+print(mean(numbers))
+

@@ -1,12 +1,17 @@
 print("please enter digits to sum up ")
 sum1 = 0
-previous_sum = 0
 
 while True:
-     digit = int(input("please enter digit: "))
-     sum1 += digit
+    num = int(input("please enter digit: "))
+    sum1 += num
 
-     if sum1 <= previous_sum:
-         break
+    if num <= 0:
+        break
 print(f"final sum equals = {sum1}")
 
+sum2 = 0
+while num > 0:
+    num = int(input("please enter digit: "))
+    sum2 += num
+
+print(f"final sum equals = {sum2}")
