@@ -36,4 +36,3 @@ while players_choice == 0 and throw == 0:
     break
 while computer_choice == 1 and throw == 1:
     print("computer scores a point !")
-    break
