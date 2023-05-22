@@ -1,3 +1,4 @@
+
 user_number = int(input("please enter number: "))
 dividers = []
 
