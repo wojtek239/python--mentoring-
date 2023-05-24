@@ -2,7 +2,7 @@ users_word = input("please enter ur word: ")
 print(users_word)
 reversed_word = users_word[::-1]
 print(reversed_word)
-
+# [::-1] to reverse
 if users_word == reversed_word:
     print("this is palindrome")
 else:

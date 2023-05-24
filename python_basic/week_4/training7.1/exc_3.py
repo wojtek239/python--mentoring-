@@ -7,7 +7,7 @@ if my_fav_colours == user_colours:
     print("both sets are the same")
 else:
     print("they are not the same")
-
+# intersection
 doubled_colours = my_fav_colours.intersection(user_colours)
 print(f"doubled colours are: ", doubled_colours)
 

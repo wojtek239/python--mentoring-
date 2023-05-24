@@ -21,3 +21,4 @@ while not guess:
     if score <= 0:
         print("lol u lost")
         break
+
