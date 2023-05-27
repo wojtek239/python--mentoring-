@@ -1,7 +1,18 @@
 day_number = int(input("please enter number from 1 to 7: "))
-while day_number not in range(1, 8):
+if day_number not in range(1, 8):
     print("there is no such day")
-    break
+
+week_days = ['Monday', 'Tuesday', 'Wednesday']
+print(f'{week_days[day_number - 1]}')
+
+week_days_dict = {
+    1: 'Monday',
+    2: 'Tuesday',
+    3: 'Wednesday',
+    }
+print(f'{week_days_dict[day_number]}')
+
+
 if day_number == 1:
     print("it's Monday")
 elif day_number == 2:

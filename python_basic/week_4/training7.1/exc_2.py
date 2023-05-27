@@ -1,8 +1,12 @@
+import re
 import string
 
 sentence = input("please type your sentence: ")
 
-import re
+for sign in string.punctuation:
+    phrase = phrase.replace(sign, "")
+
+
 sentence_without = re.sub(r"[^\w\s]", "", sentence)
 print(sentence_without)
 
