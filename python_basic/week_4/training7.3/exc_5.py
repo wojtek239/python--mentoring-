@@ -27,7 +27,7 @@ if capitalized_words:
 else:
     print("there are no capitalized words")
 
-#concrete words (like and, in, on, under, for)
+# concrete words (like and, in, on, under, for)
 search_words = ["and", "in", "on", "under", "for"]
 found_words = [word for word in words if word in search_words]
 if found_words:
@@ -35,7 +35,7 @@ if found_words:
 else:
     print("there are no such words")
 
-#sort
+# sort
 sorted_words = words.sort
 print(sorted_words)
 
