@@ -1,0 +1,15 @@
+W języku Python kluczami w słownikach mogą być obiekty, które są hashowalne (immutable).
+Oznacza to, że obiekty te mają stały identyfikator, który nie ulega zmianie.
+
+
+Liczby całkowite (integers)
+Liczby zmiennoprzecinkowe (floats)
+Łańcuchy znaków (strings)
+Tuple (krotki) - pod warunkiem, że wszystkie ich elementy są hashowalne
+Booleany (True, False)
+Niezmienne obiekty własnego typu (immutable user-defined objects)
+
+Natomiast obiekty, które nie mogą być kluczami w słownikach, to między innymi:
+listy (lists),
+słowniki (dictionaries)
+inne modyfikowalne obiekty.
