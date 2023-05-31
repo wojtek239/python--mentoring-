@@ -38,6 +38,3 @@ else:
 # sort
 sorted_words = words.sort
 print(sorted_words)
-
-
-
