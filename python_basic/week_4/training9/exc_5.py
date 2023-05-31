@@ -23,3 +23,5 @@ for name, details in bill.items():
     print(f"{name}:")
     print(f" Dishes: {', '.join(details['dish'])}")
     print(f" Prices: {details['price']}")
+
+# lambda = w zeszycie mam
