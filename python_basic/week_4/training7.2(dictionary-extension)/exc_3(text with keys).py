@@ -11,7 +11,7 @@ word_count = {}
 words = text.split()
 
 for word in words:
-    if word in word_count:
+    if word in word_count.keys():
         word_count[word] += 1
     else:
         word_count[word] = 1
