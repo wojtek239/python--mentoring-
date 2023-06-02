@@ -1,5 +1,0 @@
-d = (1, [2, 4], 'text', 3 + 5j)
-print(len(d))
-print(d[:2])
-print(d[3])
-print('abc' in d)
