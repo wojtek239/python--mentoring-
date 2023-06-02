@@ -9,9 +9,10 @@ print("aviable albums: ")
 for album in music_albums.keys():
     print(album)
 
-user_input = input("please enter album name: ")
-if user_input in music_albums:
+# user_album
+if (user_input := input("please enter album name: ")) in music_albums:
     artist = music_albums[user_input]
-    print(f"creator of ", {user_input}, "is", {artist})
+    print(f"creator of ", {user_input}, " is", {artist})  # NO OK
+    print(f"creator of {user_input} is {artist}")  # OK
 else:
     print("no data")

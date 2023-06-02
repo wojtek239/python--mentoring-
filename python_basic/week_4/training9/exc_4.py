@@ -2,7 +2,7 @@ rainfall_data = {}
 while True:
     city = input("please enter city name (or type in blank space to end): ")
     if city == " ":
-         break
+        break
 
     rainfall = float(input("please enter rainfall (in mm): "))
 
