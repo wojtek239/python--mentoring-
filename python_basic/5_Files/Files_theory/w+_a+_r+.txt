@@ -1,0 +1,15 @@
+
+"w+" (write plus): Tryb ten otwiera plik w trybie zapisu i odczytu. Jeśli plik nie
+istnieje, zostanie utworzony. Jeśli plik istnieje, jego zawartość zostanie usunięta.
+Można zapisywać dane do pliku i odczytywać dane z niego. Użycie tego trybu powoduje,
+że bieżący wskaźnik pliku jest ustawiony na początek pliku.
+
+"a+" (append plus): Tryb ten otwiera plik w trybie dopisywania i odczytu. Jeśli plik
+nie istnieje, zostanie utworzony. Można zapisywać dane na koniec pliku i odczytywać
+dane z niego. Użycie tego trybu powoduje, że bieżący wskaźnik pliku jest ustawiony na
+koniec pliku.
+
+"r+" (read plus): Tryb ten otwiera plik w trybie odczytu i zapisu. Można odczytywać
+dane z pliku i zapisywać do niego. Użycie tego trybu powoduje, że bieżący wskaźnik
+pliku jest ustawiony na początek pliku.
+
