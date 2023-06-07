@@ -1,0 +1,12 @@
+The difference between UTF-8 and ASCII encoding is the way characters are represented
+in binary form.
+
+
+If we read a file with Polish letters in UTF-8 format without changing the way the data
+is formatted, we will get the correct Polish letters, because UTF-8 supports encoding
+non-ASCII characters, such as Polish letters.
+
+
+In the case of ASCII, which does not contain characters outside the ASCII
+range, Polish letters may be incorrectly interpreted or replaced with other characters
+or special sequences because they are not supported by this encoding.
