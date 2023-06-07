@@ -1,0 +1,7 @@
+file = open("example.txt", "r")
+lines = file.readlines()
+print(lines)
+file.close()
+
+In this example line 4th was missing. It's important to close the file in the end to
+free up system resources.
