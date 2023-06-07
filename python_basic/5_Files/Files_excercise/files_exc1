@@ -1,0 +1,7 @@
+C:\example.txt  --> it is absolute path (bcs it starts from (C:)
+
+\catalog\example.txt --> this is relative path
+
+C:\outer_dir\inner_dir\example.txt --> it is absolute path (bcs it starts from (C:)
+
+\outer_dir\inner_dir\example.txt --> this is relative path (względna)
