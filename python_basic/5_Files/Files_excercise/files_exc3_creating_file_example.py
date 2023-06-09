@@ -6,6 +6,6 @@ with open("example.txt", "w") as file:
 
 with open("example.txt", "r") as file:
     lines = file.readlines()
-    for i, line in enumerate(lines):
-        if (i + 1) % 2 == 0:
+    for i, line in enumerate(lines, start=1):
+        if i % 2 == 0:
             print(line.strip())

@@ -1,7 +1,7 @@
 class Vechicle:
     def __init__(self, wheels_number_, brand_, colour_):
-        self.wheels_number = wheels_number_
-        self.brand = brand_
+        self.__wheels_number = wheels_number_
+        self._brand = brand_
         self.colour = colour_
 
     '''getter field __wheels_number'''
@@ -11,6 +11,7 @@ class Vechicle:
     '''getter field __wheels_number'''
     def set_wheels_number(self, wheels_number_):
         self.__wheels_number = wheels_number_
+
 
 def main():
     car = Vechicle(4, "Audi", "blue")
@@ -23,6 +24,7 @@ def main():
 
     truck.__wheels_number = 12
     truck.set_wheels_number(12)
+
 
 if __name__ == "__main__":
     main()
