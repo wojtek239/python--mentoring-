@@ -19,4 +19,3 @@ print(f'area is: {rectangle1.area()}')
 
 
 print(f'perimeter is: {rectangle1.perimeter()}')
-

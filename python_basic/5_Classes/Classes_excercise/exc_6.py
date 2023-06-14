@@ -35,7 +35,6 @@ manager = Manager()
 
 manager.add_order(order1)
 manager.add_order(order2)
-manager.add_order(order2)
 manager.add_order(order3)
 
 manager.display_order()

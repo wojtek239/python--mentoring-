@@ -11,4 +11,3 @@ for package in data['packages']:
 
 
 print(f'{dn}, {description}, {speed}, {mtu}')
-

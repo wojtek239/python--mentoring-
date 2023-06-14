@@ -8,4 +8,3 @@ def find_max_index(nums):
             return i
 index = find_max_index(nums)
 print(f'biggest index is: {index}')
-
