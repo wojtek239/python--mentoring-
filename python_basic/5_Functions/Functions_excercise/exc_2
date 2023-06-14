@@ -1,0 +1,15 @@
+Parametr to zmienna zdefiniowana w deklaracji funkcji. Jest to nazwa, która służy do
+identyfikacji wartości przekazywanej do funkcji.
+
+
+Argument to wartość przekazywana do funkcji w momencie jej wywołania. Jest to konkretna
+wartość, którą przekazujemy do funkcji.
+
+Default arguments (domyślne argumenty) to parametry funkcji, które posiadają wartość
+domyślną. Jeśli nie zostanie przekazana wartość dla takiego argumentu przy wywołaniu
+funkcji, zostanie użyta wartość domyślna.
+
+
+Keyword arguments (argumenty nazwane) to przekazanie wartości do funkcji, używając
+nazwy parametru. Pozwala to na jawną identyfikację, który parametr jest przypisywany
+jakiej wartości, niezależnie od kolejności.
