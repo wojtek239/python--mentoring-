@@ -8,4 +8,4 @@ with open("example.txt", "r") as file:
     lines = file.readlines()
     for i, line in enumerate(lines, start=1):
         if i % 2 == 0:
-            print(line.strip())
+            print(line)
