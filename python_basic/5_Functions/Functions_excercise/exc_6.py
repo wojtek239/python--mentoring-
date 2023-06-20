@@ -4,7 +4,6 @@ import collections
 def get_filtered_numbers(numbers: list[int]) -> list[int]:
     """
     filter numbers with only two digits
-
     """
     filtered_list = []
 

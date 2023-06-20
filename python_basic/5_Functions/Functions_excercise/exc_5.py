@@ -1,7 +1,6 @@
 def combine_numbers(**kwargs: int) -> list:
     """
 combine both odd and even numbers
-
     """
     odd_numbers = []
     even_numbers = []
