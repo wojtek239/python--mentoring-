@@ -1,8 +1,7 @@
 def combine_numbers(**kwargs: int) -> list:
     """
 combine both odd and even numbers
-    :param kwargs: int
-    :return: list
+
     """
     odd_numbers = []
     even_numbers = []
