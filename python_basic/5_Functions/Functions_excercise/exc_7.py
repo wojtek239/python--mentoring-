@@ -33,6 +33,9 @@ def simulate_rocket_flight(fuel_lv: int, astronaut_amount: int) -> int:
 
 
 def show_result(distance: int):
+    """
+    to show result
+    """
     if distance > 2000:
         print("rocket has arrived to the orbit")
     else:
