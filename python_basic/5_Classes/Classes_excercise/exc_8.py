@@ -10,7 +10,7 @@ class Case:
 
     def retrieve_seconds(self):
         if self.end_task is None:
-            return None  # Task is still ongoing
+            return None
 
         time_difference = self.end_task - self.created_task
         return time_difference.total_seconds()
