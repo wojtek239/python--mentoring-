@@ -46,4 +46,3 @@ fuel_lv = get_fuel_lv()
 astronaut_amount = get_astronaut_amount()
 final_distance = simulate_rocket_flight(fuel_lv, astronaut_amount)
 show_result(final_distance)
-

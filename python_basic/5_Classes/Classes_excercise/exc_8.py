@@ -33,5 +33,3 @@ seconds_second_case = second_case.retrieve_seconds()
 
 print(f"time difference first_case: {seconds_first_case} sec")
 print(f"time difference second_case: {seconds_second_case} sec")
-
-
