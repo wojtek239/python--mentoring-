@@ -1,16 +1,15 @@
-from datetime import datetime
+from datetime import datetime as dt
 
 
 class Case:
+    TIME_FORMAT = "%Y-%m-%dT%H:%M:%S+00:00"
+
     def __init__(self, case_data):
         self.name = case_data['name']
-        self.created_task = datetime.fromisoformat(case_data['created_task'])
-        self.end_task = None if case_data['end_task'] is None else \
-            datetime.fromisoformat(case_data['end_task'])
+        self.created_task = dt.strptime(case_data['created_task'], self.TIME_FORMAT)
+        self.end_task = dt.strptime(case_data['end_task'], self.TIME_FORMAT) if case_data['end_task'] else dt.now()
 
-    def retrieve_seconds(self):
-        if self.end_task is None:
-            return None
+    def retrieve_seconds(self) -> float:
 
         time_difference = self.end_task - self.created_task
         return time_difference.total_seconds()
@@ -29,7 +28,7 @@ second_case = Case({
 })
 
 seconds_first_case = first_case.retrieve_seconds()
-seconds_second_case = second_case.retrieve_seconds()
-
 print(f"time difference first_case: {seconds_first_case} sec")
+
+seconds_second_case = second_case.retrieve_seconds()
 print(f"time difference second_case: {seconds_second_case} sec")

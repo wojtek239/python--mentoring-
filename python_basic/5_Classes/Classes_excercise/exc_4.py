@@ -1,12 +1,18 @@
+from math import ceil
+
+
 class BankAccount:
+    FEE = 2
+
     def __init__(self, account_nr_: int, owner_name_: str, balance_: float):
         self.account_nr = account_nr_
         self.owner_name = owner_name_
         self.balance = balance_
 
     def deposit(self, amount_: float):
-        amount_ = float(input("please enter amount: "))
-        provision = amount_ // 100 * 2
+        # za kazde 100 zł x prowozji
+        provision = ceil(amount_ // 100) * self.FEE
+
         self.balance += amount_ - provision
         print(f'after payment, which is: {amount_}, provision will be: {provision}')
 
@@ -19,6 +25,7 @@ class BankAccount:
 
     def change_ownership(self, new_owner_: str):
         self.new_owner = new_owner_
+
 
     def display(self):
 

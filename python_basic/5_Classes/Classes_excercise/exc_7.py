@@ -19,18 +19,18 @@ class Notepad:
         note = Note(author_, content_)
         self.notes.append(note)
 
-    def notes_number(self):
+    def notes_number(self) -> int:
         return len(self.notes)
 
     def show_notes(self):
-        if self.notes_number() == 0:    # czy tutaj walrus ?
-            print("notepad is empty")
-        else:
+        if self.notes_number():
             for i, note in enumerate(self.notes):
                 print(f'Note {i}:')
                 print(f'Author: {note.author}')
                 print(f'Content: {note.content}')
                 print(f'Creation time: {note.creation_time}')
+        else:
+            print("notepad is empty")
 
 notepad = Notepad()
 

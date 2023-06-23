@@ -1,10 +1,10 @@
 class Vechicle:
-    def __init__(self, v_max_: int, mileage_:float):
+    def __init__(self, v_max_: int, mileage_: float):
         self.v_max = v_max_
         self.mileage = mileage_
 
-    def add_mileage(self, value_: float):
-        self.mileage += value_
+    def add_mileage(self, value: float):
+        self.mileage += value
 
 
 vechicle1 = Vechicle(200, 50000)
