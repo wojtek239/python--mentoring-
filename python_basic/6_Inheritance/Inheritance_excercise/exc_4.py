@@ -1,8 +1,25 @@
+class Menu:
+    @staticmethod
+    def show():
+        menu = """
+        1. Add Note
+        2. Add Card
+        3. Show all Notes
+        4. Show all Cards
+        5. Exit
+        """
+        print(menu)
+
+    @staticmethod
+    def get_choice() -> int:
+        return int(input("Choose what you want do:"))
+
+
 class Notes:
     def __init__(self):
         self.notes = []
 
-    def add(self):
+    def add_note(self):
         """
         to add new note
         """
@@ -10,9 +27,9 @@ class Notes:
         self.notes.append(note)
         print("Note added.")
 
-    def show(self):
+    def show_notes(self):
         """
-        to show existing notes
+        to show existing notes # pisac pelnymi zdaniami
         """
         if not self.notes:
             print("There is no such note.")
@@ -26,7 +43,7 @@ class Cards:
     def __init__(self):
         self.cards = []
 
-    def add(self):
+    def add_card(self):
         """
         to add new card
         """
@@ -34,7 +51,7 @@ class Cards:
         self.cards.append(card)
         print("Card added.")
 
-    def show(self):
+    def show_cards(self):
         """
         to show existing cards
         """
@@ -46,60 +63,53 @@ class Cards:
                 print(card)
 
 
-class Manager:
+class Manager(Cards, Notes):
     def __init__(self):
+        Cards.__init__(self)
+        Notes.__init__(self)
+
         self.menu_options = {
-            "1": "Add note",
-            "2": "Add card",
-            "3": "Show all notes",
-            "4": "Show all cards",
-            "5": "Exit"
+            1: self.add_note,
+            2: self.add_card,
+            3: self.show_notes,
+            4: self.show_cards,
+            5: quit,
         }
-        self.notes = Notes()
-        self.cards = Cards()
 
     def start(self):
         """
         to start program
         """
         while True:
-            self.show_menu()
-            choice = self.get_choice()
+            Menu.show()
+            user_choice = Menu.get_choice()
 
-            if choice == "1":
-                self.notes.add()
+            self.menu_options.get(user_choice, self.show_error)()
 
-            elif choice == "2":
-                self.cards.add()
+    def show_error(self):
+        print("Wrong choice.")
 
-            elif choice == "3":
-                self.notes.show()
-
-            elif choice == "4":
-                self.cards.show()
-
-            elif choice == "5":
-                print("Exit program.")
-                break
-
-            else:
-                print("Wrong choice.")
-
-    def show_menu(self):
-        """
-        to show menu
-        """
-        print("Menu:")
-        for number, option in self.menu_options.items():
-            print(f"{number}. {option}")
-
-    def get_choice(self):
-        """
-        to choose an option from menu
-        """
-        choice = input("Choose option: ")
-        return choice
+    # def show_menu(self):
+    #     """
+    #     to show menu
+    #     """
+    #     print("Menu:")
+    #     for number, option in self.menu_options.items():
+    #         print(f"{number}. {option}")
+    #
+    # def get_choice(self):
+    #     """
+    #     to choose an option from menu
+    #     """
+    #     choice = input("Choose option: ")
+    #     return choice
 
 
-manager = Manager()
-manager.start()
+def main():
+    manager = Manager()
+    manager.start()
+
+
+if __name__ == "__main__":
+    main()
+# funkcja statyczna
