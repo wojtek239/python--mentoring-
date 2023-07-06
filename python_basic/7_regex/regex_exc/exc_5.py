@@ -10,6 +10,6 @@ def find_string(string: str) -> list:
     return result
 
 
-text = "unique dejifse eda addsfe njieadniadnaeijn 3443oij 4ke3"
+text = "unique dejifs eda addsfe njieadniadnaeijn 3443oij 4ke3"
 result = find_string(text)
 print(result)
