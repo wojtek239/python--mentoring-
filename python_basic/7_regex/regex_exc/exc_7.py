@@ -5,6 +5,7 @@ def get_company_name(email_adress: str) -> list:
     """
     to get company name from email adress
     """
+    # (\w+)@([a-zA-Z]+).([a-zA-Z]+)
     str_set = r"@([a-zA-Z]+)\.com$"
     match = re.search(str_set, email_adress)
     if match:
