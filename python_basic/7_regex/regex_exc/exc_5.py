@@ -5,6 +5,7 @@ def find_string(string: str) -> list:
     """
     finds a string with max 6 letters and without a/A
     """
+    # [B-Zb-z]{0,6}
     str_set = r"\b(?=\w{6}\b)(?![Aa])\w+"
     result = re.findall(str_set, string)
     return result
