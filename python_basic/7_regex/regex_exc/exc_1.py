@@ -12,5 +12,11 @@ def check_string(string: str) -> str:
         print("String has different set of letters than (a-z, A-Z) and numbers (0-9).")
 
 
-check_string("Abc123")
-check_string("Test!")
+def main():
+    check_string("Abc123")
+    check_string("Test!")
+    check_string("Ab c123")
+
+
+if __name__ == "__main__":
+    main()

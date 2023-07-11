@@ -5,7 +5,8 @@ def find_s(string: str) -> list:
     """
     checks if string has at least two letters s
     """
-    string_set = r"\b\w*ss+\b"
+    # r"\b\w*ss+\b"
+    string_set = r"s{2,}"
     result = re.findall(string_set, string, re.IGNORECASE)
     return result
 

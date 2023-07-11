@@ -1,10 +1,11 @@
 import re
 
 
-def get_number_format(number: float) -> string:
+def get_number_format(number: str):
     """
      check if given number has good format
     """
+    # (\d+),(\d+)
     nr_set = r"^[-+]?[0-9]+(\.[0-9]+)?$"
     if re.match(nr_set, number):
         print("number has good format")
@@ -12,9 +13,9 @@ def get_number_format(number: float) -> string:
         print("number doesn't have good format")
 
 
-number1 = 123,2341515132135
+number1 = '123,2341515132135'
 get_number_format(number1)
 
-number2 = 123,
+number2 = '123,'
 get_number_format(number2)
 

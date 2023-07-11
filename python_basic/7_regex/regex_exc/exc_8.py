@@ -6,6 +6,8 @@ def get_numbers(sign_string: str) -> str:
     numbers = re.findall(str_set, sign_string)
     return numbers
 
+# mozna prosciej
+
 
 string = "2 cats and 3 dogs"
 result = get_numbers(string)
