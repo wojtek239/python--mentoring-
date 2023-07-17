@@ -11,4 +11,9 @@ def func(*args):
     return 3 + len(args)
 
 
-func(4, 4, 4)
+def main():
+    func(4, 4, 4)
+
+
+if __name__ == '__main__':
+    main()
