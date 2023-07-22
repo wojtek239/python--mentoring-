@@ -11,4 +11,3 @@ list_y = [5, 6, 7, 8]
 
 products = list(map(multiply, list_x, list_y))
 print(f'results of multiplying are: ', products)
-# nie powinno byc najpierw list? print(list(products))?
