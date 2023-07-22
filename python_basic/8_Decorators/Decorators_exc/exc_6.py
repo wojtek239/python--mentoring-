@@ -13,10 +13,10 @@ class Circle:
             raise ValueError("Radius must be positive value.")
         self._radius = value
 
-    circle = Circle(5)
-    print(circle.radius)
-    circle.radius = 10
-    print(circle.radius)
+circle = Circle(5)
+print(circle.radius)
+circle.radius = 10
+print(circle.radius)
 
 
 #abstractmethod
@@ -62,8 +62,9 @@ class MyClass:
         self.value = value
         MyClass.count += 1
 
-        @classmethod
-        def get_count(cls):
+    @classmethod
+    def get_count(cls):
+        pass
 
 #staticmethod
 
