@@ -14,6 +14,7 @@ def prime_generator():
             yield num
         num += 1
 
+
 gen = prime_generator()
 for _ in range(10):
     print(next(gen))

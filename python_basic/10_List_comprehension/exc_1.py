@@ -22,4 +22,8 @@ try:
 except StopIteration:
     print("Iteration,got example")
 
-print("Nope ;) try-except")
+print("Nope, try-except")
+
+gen = my_generator()
+for num in gen:
+    print(num)
