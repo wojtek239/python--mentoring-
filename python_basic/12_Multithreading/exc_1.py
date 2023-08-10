@@ -16,14 +16,14 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 
-def threaded_bubble_sort(arr, num_threads):
+def threaded_bubble_sort(arr, num_threads=2):
     chunk_size = len(arr) // num_threads
     threads = []
 
     for i in range(num_threads):
         start_idx = i * chunk_size
         end_idx = (i + 1) * chunk_size if i < num_threads - 1 else len(arr)
-        thread = threading.Thread(target=bubble_sort, args=(arr[start_idx:end_idx]))
+        thread = threading.Thread(target=bubble_sort, args=([arr[start_idx:end_idx]]))
         threads.append(thread)
         thread.start()
 
@@ -31,26 +31,24 @@ def threaded_bubble_sort(arr, num_threads):
         thread.join()
 
 
-def process_bubble_sort(arr, num_processes):
+def process_bubble_sort(arr, num_processes=2):
     chunk_size = len(arr) // num_processes
     processes = []
 
     for i in range(num_processes):
         start_idx = i * chunk_size
         end_idx = (i + 1) * chunk_size if i < num_processes - 1 else len(arr)
-        process = multiprocessing.Process(target=bubble_sort, args=(arr[start_idx:end_idx],))
-        processes.append(process)
-        process.start()
 
-    for process in processes:
-        process.join()
+        pool = multiprocessing.Pool(processes=num_processes)
+
+        pool.apply_async(func=bubble_sort, args=([arr[start_idx:end_idx]]))
+        pool.close()
+        pool.join()
 
 
 if __name__ == "__main__":
     array_size = 100
     num_arrays = 10
-    num_threads = 2
-    num_processes = 2
 
     arrays = []
     for _ in range(num_arrays):
@@ -58,13 +56,14 @@ if __name__ == "__main__":
         arrays.append(random_array)
 
     start_time = time.time()
-    for array in arrays:
-        threaded_bubble_sort(array, num_threads)
+    for array in arrays[:]:
+        threaded_bubble_sort(array)
     end_time = time.time()
     print(f"Multithread sorting: {end_time - start_time} seconds")
 
     start_time = time.time()
-    for array in arrays:
-        process_bubble_sort(array, num_processes)
+    for array in arrays[:]:
+        process_bubble_sort(array)
+
     end_time = time.time()
     print(f"Multiprocess sorting: {end_time - start_time} seconds")

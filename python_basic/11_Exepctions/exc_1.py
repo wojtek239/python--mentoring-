@@ -14,14 +14,18 @@ class FileHandler:
         self.file_path = file_path
 
     def set_no_connectors(self, no_connectors):
-        if not isinstance(no_connectors, int) or no_connectors <= 0\
-                or no_connectors > 10:
+        if (
+                not isinstance(no_connectors, int) or no_connectors <= 0 or
+                no_connectors > 10
+        ):
             raise InvalidDataError("'no_connectors' must be from 1 to 10")
         self.no_connectors = no_connectors
 
     def set_max_file_size(self, max_file_size):
-        if not isinstance(max_file_size, int) or max_file_size < 1000\
-                or max_file_size > 9999:
+        if (
+                not isinstance(max_file_size, int) or max_file_size < 1000
+                or max_file_size > 9999
+        ):
             raise InvalidDataError("'max_file_size' must be 4-digit number")
         self.max_file_size = max_file_size
 
