@@ -1,11 +1,3 @@
-class InvalidNumberError(Exception):
-    pass
-
-
-class DivisionByZeroError(Exception):
-    pass
-
-
 class Example3Error(Exception):
     pass
 
@@ -16,11 +8,11 @@ def example1():
             x = int(input("enter a number: "))
             y = int(input("enter another number: "))
             if y == 0:
-                raise DivisionByZeroError("U can't divide by 0")
+                raise ZeroDivisionError
             print(x, '/', y, '=', x/y)
         except ValueError:
             print("Error: enter correct number")
-        except DivisionByZeroError as e:
+        except ZeroDivisionError as e:
             print(f"Error: {e}")
 
 
