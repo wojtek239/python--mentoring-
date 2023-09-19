@@ -1,4 +1,4 @@
-from functionality.operations import *
+from ..functionality.operations import *
 
 
 def test_should_return_correct_value_for_positive_exp():
@@ -25,8 +25,9 @@ def test_should_return_0_for_0_base():
     assert calc_power(base, exp1) == 0
     assert calc_power(base, exp2) == 0
 
+
 def test_should_return_correct_float_for_fractional_exp():
     base = 100
     exp = 0.5
 
-    assert calc_power(base, exp) = 10
+    assert calc_power(base, exp) == 10
